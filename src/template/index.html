@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <form>
+            <div class="col-md-12 col-sm-12 cards">
+                <div class="col-md-6 col-sm-6 sent-data">
+                    <h4>Данные отправителя</h4>
+                    <div class="cardDemo">
+                        <div class="card">
+                            <div class="brand">
+                                <img id="myBrand">
+                            </div>
+                            <div class="numCard">
+                                <label>
+                                    <p>Номер карты</p>
+                                    <input id="myCardNum" type="text">
+                                </label>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="col-md-6 col-sm-6 col-xs-6 dateCard">
+                                    <p>Срок действия</p>
+                                    <input type="text" placeholder="ММ">/<input type="text" placeholder="ГГ">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 cvvCard">
+                                    <label>
+                                        <p>CVV/CVC <i class="fa fa-question-circle-o" aria-hidden="true"></i></p>
+                                        <input type="text">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 get-data">
+                    <h4>Данные получателя</h4>
+                    <div class="cardDemo">
+                        <div class="card">
+                            <div class="brand">
+                                <img id="personBrand">
+                            </div>
+                            <div class="numCard">
+                                <label>
+                                    <p>Номер карты</p>
+                                    <input id="personCardNum" type="text">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 wrapFormCard">
+                <div class="col-md-6 col-sm-6">
+                    <div class="formCard">
+                        <label class="chEmail">
+                            <input class="checkbox" type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Отправить чек на e-mail</span><br>
+                            <input type="email" placeholder="Ваш e-mail">
+                        </label>
+                        <label class="sumMon">
+                            <span class="label">Сумма перевода</span><br>
+                            <input type="text" placeholder="От 500 до 500000"><span class="money money1">BYN</span>
+                        </label>
+                        <label class="allSum">
+                            <span class="label">Итоговая сумма</span><br>
+                            <input type="text" placeholder="От 680 до 530150"><span class="money money2">BYN</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="formCard">
+                        <label class="mesEmail">
+                            <input class="checkbox" type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Добавить сообщение получателю </span>
+                            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 wrapButton">
+                <div class="col-md-6 col-sm-6">
+                    <div class="formBut">
+                        <button id="but" class="button">Перевести</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

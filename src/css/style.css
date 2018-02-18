@@ -1,0 +1,140 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Open Sans', sans-serif;
+}
+.cards, .wrapFormCard, .wrapButton {
+    padding: 0;
+    margin-bottom: 20px;
+}
+h4 {
+    color: #82807e;
+}
+.sent-data, .get-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand {
+    float: right;
+    padding-top: 12px;
+    padding-right: 15px;
+}
+.numCard {
+    padding-top: 60px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.numCard p, .dateCard p, .cvvCard p {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+.cvvCard i {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-left: 5px;
+}
+.numCard input {
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 300px;
+}
+.dateCard {
+    padding-left: 15px;
+}
+.dateCard p {
+    padding-bottom: 8px;
+}
+.dateCard input {
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 30px;
+    text-align: center;
+}
+.cvvCard input {
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 50px;
+}
+.card {
+    background-color: #ffffff;
+    width: 360px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.formCard, .formBut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chEmail input, .sumMon input, .allSum input, .mesEmail, .formBut button {
+    width: 360px;
+    height: 40px;
+}
+.chEmail input, .sumMon input, .allSum input {
+    padding-left: 12px;
+}
+.chEmail input, .sumMon input {
+    margin-bottom: 10px;
+}
+.mesEmail {
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    margin-bottom: 0;
+}
+.mesEmail i {
+    font-size: 25px;
+    color: #82807e;
+}
+.mesEmail .checkbox-custom {
+    margin-right: 5px;
+}
+.button {
+    background-color: #49924d;
+    color: #e6fbe0;
+    border: 1px solid #9bc2a1;
+    margin-top: -10px;
+}
+.checkbox {
+    display: none;
+}
+label .label{
+    color: #909291;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 0;
+}
+.checkbox-custom {
+    position: relative;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.checkbox:checked + .checkbox-custom::before {
+    content: '\2714';
+    font-size: 18px;
+    color: #3e3e3e;
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: 0.5px;
+}
+.money {
+    z-index: 10;
+    position: absolute;
+    font-size: 19px;
+    color: #82807e;
+    font-weight: normal;
+    margin-top: 7px;
+    margin-left: -45px;
+}
