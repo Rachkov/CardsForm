@@ -23,34 +23,18 @@
     .cardDemo {
         padding-left: calc((100% - 360px)/2);
     }
-    .chEmail , .sumMon, .mesEmail, .allSum, .button {
+    .chEmail , .sumMon, .mesEmail, .allSum, .button, .input-group , .cus-input{
         width: 100%;
     }
-    .chEmail input, .sumMon input, .allSum input, .mesEmail, .button {
+    .chEmail input, .sumMon input, .allSum input, .mesEmail, .button, .input-group, .cus-input {
         min-width: 100%;
     }
 }
 @media only screen and (max-width : 779px) and (min-width : 768px) {
-    .money {
-        margin-left: 315px;
-    }
-    .money1 {
-        margin-top: -43px;;
-    }
-    .money2 {
-        margin-top: -33px;
-    }
+
 }
 @media only screen and (max-width : 389px) {
-    .money {
-        margin-left: 315px;
-    }
-    .money1 {
-        margin-top: -43px;;
-    }
-    .money2 {
-        margin-top: -33px;
-    }
+
 }
 
 /* Extra Small Devices, Phones */
