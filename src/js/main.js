@@ -28,3 +28,9 @@ function changeBrand(event, brand) {
 myCardNum.addEventListener('keyup', (event) => changeBrand(event, 'myBrand'));
 
 personCardNum.addEventListener('keyup', (event) => changeBrand(event, 'personBrand'));
+
+const btnMore = document.getElementById('btnMore');
+const btnMoreMenu = document.getElementById('btnMoreMenu');
+btnMore.addEventListener('click', function () {
+    btnMoreMenu.classList.toggle('open-menu');
+});

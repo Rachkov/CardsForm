@@ -7,10 +7,15 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .sent-data , .get-data {
+    .sent-data , .get-data, .leftMain {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    .rightMain{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
     .formCard, .formBut {
         display: flex;
@@ -29,9 +34,19 @@
     .chEmail input, .sumMon input, .allSum input, .mesEmail, .button, .input-group, .cus-input {
         min-width: 100%;
     }
-}
-@media only screen and (max-width : 779px) and (min-width : 768px) {
-
+    .navbar li, .navbar-nav{
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #btnMore{
+        border-radius: 3px;
+        background-color: #f8f8f8;
+        color: #49924d;
+    }
+    .navbar-default .navbar-nav > li > a, #btnMore{
+        padding: 10px 15px 10px 15px;
+    }
 }
 @media only screen and (max-width : 389px) {
 
